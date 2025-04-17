@@ -8,7 +8,7 @@ RUN npm init -y && \
     npm cache clean --force
 
 # Copy app file
-COPY app.js .
+COPY /volume1/docker/em-blog-discord-connect/app.js .
 
 # Expose the port
 EXPOSE 3000
