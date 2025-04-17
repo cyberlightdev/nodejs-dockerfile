@@ -8,8 +8,8 @@ const PORT = process.env.PORT || 3000;
 const DISCORD_WEBHOOK_URL = process.env.DISCORD_WEBHOOK_URL;
 
 // Middleware
-app.use(bodyParser.json({ limit: '50mb' }));
-app.use(bodyParser.urlencoded({ limit: '50mb', extended: true }));
+app.use(bodyParser.json({ limit: '1024mb' }));
+app.use(bodyParser.urlencoded({ limit: '1024mb', extended: true }));
 
 // Simple health check endpoint
 app.get('/', (req, res) => {
